@@ -1,0 +1,42 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Data: never commit (size + license). Keep folder structure via .gitkeep
+/data/**
+!/data/**/
+!/data/**/.gitkeep
+
+# Model artifacts
+/models/
+*.pkl
+*.joblib
+
+# Experiment tracking
+mlruns/
+mlartifacts/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Secrets
+.env
+kaggle.json
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

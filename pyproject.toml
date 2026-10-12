@@ -1,0 +1,33 @@
+[project]
+name = "lending-club-pd"
+version = "0.1.0"
+description = "PD model development project"
+readme = "README.md"
+authors = [
+    { name = "MadejMatt", email = "248226989+MadejMatt@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "kaggle>=2.2.4",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "polars>=2.0.0",
+    "pyarrow>=26.0.0",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+lending-club-pd = "lending_club_pd:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
